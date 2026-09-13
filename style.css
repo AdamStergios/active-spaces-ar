@@ -6,10 +6,13 @@ html,
 body {
     margin: 0;
     padding: 0;
+
     width: 100%;
     min-height: 100%;
+
     background: #0b0b0b;
     color: white;
+
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,10 +23,10 @@ body {
     width: 100%;
     max-width: 430px;
 
-    height: 100svh;
-    margin: 0 auto;
+    min-height: 100svh;
 
-    padding: 14px 20px 12px;
+    margin: 0 auto;
+    padding: 10px 20px 8px;
 
     display: flex;
     flex-direction: column;
@@ -36,21 +39,21 @@ body {
 /* HEADER */
 
 .top {
-    margin: 0 0 16px;
+    margin: 0 0 12px;
 }
 
 h1 {
     margin: 0;
 
-    font-size: 27px;
+    font-size: 23px;
     font-weight: 500;
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
 }
 
 .subtitle {
-    margin-top: 6px;
+    margin-top: 4px;
 
-    font-size: 13px;
+    font-size: 12px;
     opacity: 0.7;
 }
 
@@ -63,10 +66,11 @@ h1 {
 }
 
 .content > p {
-    margin: 0 0 14px;
+    margin: 0 0 10px;
 
-    font-size: 12px;
-    line-height: 1.4;
+    font-size: 11px;
+    line-height: 1.35;
+
     opacity: 0.75;
 }
 
@@ -78,15 +82,15 @@ h1 {
 
     width: 100%;
 
-    padding: 12px;
-    margin: 0 0 10px;
+    padding: 10px;
+    margin: 0 0 8px;
 
     border: 1px solid white;
 
     color: white;
     text-decoration: none;
 
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 1.5px;
 
     transition: 0.2s;
@@ -107,22 +111,26 @@ h1 {
 /* HOW TO USE */
 
 .guide {
-    margin: 16px 0 14px;
+    margin: 10px 0 10px;
 }
 
 .guide h2 {
-    margin: 0 0 13px;
+    margin: 0 0 8px;
 
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     letter-spacing: 1.5px;
 }
 
-.guide p {
-    margin: 0 0 9px;
 
-    font-size: 11px;
-    line-height: 1.35;
+/* STEPS 1 - 5 */
+
+.guide p {
+    margin: 0 0 2px;
+
+    font-size: 10px;
+    line-height: 1.25;
+
     opacity: 0.65;
 }
 
@@ -132,10 +140,10 @@ h1 {
 footer {
     width: 100%;
 
-    margin-top: auto;
-    padding-top: 8px;
+    margin-top: 5px;
+    padding: 0;
 
-    font-size: 10px;
+    font-size: 9px;
     line-height: 1.5;
     letter-spacing: 1px;
 
@@ -159,57 +167,55 @@ footer a:hover {
 }
 
 
-/* EXTRA COMPACT FOR SHORT PHONE SCREENS */
+/* EXTRA SMALL PHONE */
 
-@media (max-height: 740px) {
+@media (max-height: 650px) {
 
     .page {
-        padding-top: 9px;
-        padding-bottom: 8px;
-    }
-
-    .top {
-        margin-bottom: 11px;
+        padding-top: 6px;
+        padding-bottom: 5px;
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 21px;
+    }
+
+    .top {
+        margin-bottom: 8px;
     }
 
     .subtitle {
-        margin-top: 4px;
         font-size: 11px;
     }
 
     .content > p {
-        margin-bottom: 10px;
-        font-size: 11px;
+        margin-bottom: 7px;
+        font-size: 10px;
     }
 
     .button {
-        padding: 10px;
-        margin-bottom: 8px;
-        font-size: 11px;
+        padding: 8px;
+        margin-bottom: 6px;
+        font-size: 10px;
     }
 
     .guide {
-        margin-top: 11px;
-        margin-bottom: 10px;
+        margin: 7px 0;
     }
 
     .guide h2 {
-        margin-bottom: 9px;
-        font-size: 11px;
+        margin-bottom: 5px;
+        font-size: 10px;
     }
 
     .guide p {
-        margin-bottom: 6px;
-        font-size: 10px;
-        line-height: 1.25;
+        margin-bottom: 1px;
+        font-size: 9px;
+        line-height: 1.2;
     }
 
     footer {
-        padding-top: 5px;
-        font-size: 9px;
+        margin-top: 3px;
+        font-size: 8px;
     }
 }
