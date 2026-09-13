@@ -6,20 +6,13 @@ html,
 body {
     margin: 0;
     padding: 0;
-
-    width: 100%;
-    height: 100%;
-
     background: #0b0b0b;
     color: white;
-
     font-family: Arial, Helvetica, sans-serif;
-
-    overflow: hidden;
 }
 
 body {
-    height: 100dvh;
+    min-height: 100vh;
 }
 
 
@@ -29,14 +22,8 @@ body {
     width: 100%;
     max-width: 468px;
 
-    height: 100dvh;
-
     margin: 0 auto;
-
-    padding:
-        clamp(10px, 1.8dvh, 18px)
-        24px
-        clamp(8px, 1.5dvh, 16px);
+    padding: 22px 24px 20px;
 
     display: flex;
     flex-direction: column;
@@ -49,22 +36,21 @@ body {
 /* HEADER */
 
 .top {
-    margin-bottom: clamp(14px, 2.5dvh, 25px);
+    margin-bottom: 42px;
 }
 
 h1 {
     margin: 0;
 
-    font-size: clamp(25px, 3.7dvh, 29px);
-
+    font-size: 34px;
     font-weight: 500;
-    letter-spacing: 2.5px;
+    letter-spacing: 3px;
 }
 
 .subtitle {
-    margin-top: 7px;
+    margin-top: 12px;
 
-    font-size: 13px;
+    font-size: 15px;
     opacity: 0.7;
 }
 
@@ -77,11 +63,10 @@ h1 {
 }
 
 .content > p {
-    margin: 0 0 13px;
+    margin: 0 0 24px;
 
-    font-size: 12px;
-    line-height: 1.45;
-
+    font-size: 14px;
+    line-height: 1.7;
     opacity: 0.75;
 }
 
@@ -93,21 +78,20 @@ h1 {
 
     width: 100%;
 
-    padding: 11px;
-    margin-bottom: 10px;
+    padding: 18px;
+    margin-bottom: 18px;
 
     border: 1px solid white;
 
     color: white;
     text-decoration: none;
 
-    font-size: 12px;
-    letter-spacing: 1.7px;
+    font-size: 14px;
+    letter-spacing: 2px;
 
     transition: 0.2s;
 }
 
-.button:link,
 .button:visited,
 .button:active {
     color: white;
@@ -122,27 +106,23 @@ h1 {
 /* HOW TO USE */
 
 .guide {
-    margin-top: clamp(12px, 2dvh, 20px);
-    margin-bottom: clamp(12px, 2dvh, 20px);
+    margin-top: 38px;
+    margin-bottom: 32px;
 }
 
 .guide h2 {
-    margin: 0 0 10px;
+    margin: 0 0 24px;
 
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
-    letter-spacing: 1.7px;
+    letter-spacing: 2px;
 }
 
-
-/* STEPS 1 - 5 */
-
 .guide p {
-    margin: 0 0 5px;
+    margin: 0 0 20px;
 
-    font-size: 11px;
-    line-height: 1.35;
-
+    font-size: 13px;
+    line-height: 1.7;
     opacity: 0.65;
 }
 
@@ -152,12 +132,12 @@ h1 {
 footer {
     width: 100%;
 
-    margin-top: auto;
-    padding-top: 7px;
+    margin-top: 25px;
+    padding: 0;
 
-    font-size: 10px;
-    line-height: 1.5;
-    letter-spacing: 1.1px;
+    font-size: 11px;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
 
     opacity: 0.7;
 }
@@ -176,54 +156,4 @@ footer a:active {
 footer a:hover {
     color: white !important;
     text-decoration: underline;
-}
-
-
-/* VERY SHORT PHONE SCREENS */
-
-@media (max-height: 650px) {
-
-    h1 {
-        font-size: 23px;
-    }
-
-    .top {
-        margin-bottom: 10px;
-    }
-
-    .subtitle {
-        font-size: 11px;
-    }
-
-    .content > p {
-        margin-bottom: 9px;
-        font-size: 11px;
-    }
-
-    .button {
-        padding: 9px;
-        margin-bottom: 7px;
-        font-size: 11px;
-    }
-
-    .guide {
-        margin-top: 9px;
-        margin-bottom: 9px;
-    }
-
-    .guide h2 {
-        margin-bottom: 7px;
-        font-size: 11px;
-    }
-
-    .guide p {
-        margin-bottom: 3px;
-        font-size: 10px;
-        line-height: 1.25;
-    }
-
-    footer {
-        padding-top: 4px;
-        font-size: 9px;
-    }
 }
