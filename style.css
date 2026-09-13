@@ -42,13 +42,13 @@ body {
 h1 {
     margin: 0;
 
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     letter-spacing: 3px;
 }
 
 .subtitle {
-    margin-top: 12px;
+    margin-top: 10px;
 
     font-size: 15px;
     opacity: 0.7;
@@ -63,7 +63,7 @@ h1 {
 }
 
 .content > p {
-    margin: 0 0 24px;
+    margin: 0 0 20px;
 
     font-size: 14px;
     line-height: 1.7;
@@ -106,8 +106,8 @@ h1 {
 /* HOW TO USE */
 
 .guide {
-    margin-top: 38px;
-    margin-bottom: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .guide h2 {
@@ -132,7 +132,7 @@ h1 {
 footer {
     width: 100%;
 
-    margin-top: 25px;
+    margin-top: 10px;
     padding: 0;
 
     font-size: 11px;
